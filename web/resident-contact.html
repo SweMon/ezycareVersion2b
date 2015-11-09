@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>EzyCare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<link rel="stylesheet" href="./css/font-awesome.min.css" />
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="./vendor/waves/waves.min.css" />
+<link rel="stylesheet" href="./vendor/wow/animate.css" />
+<link rel="stylesheet" href="./css/nativedroid2.css" />
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+</head>
+<body>
+
+	<div data-role="page">
+		
+		<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+
+			<h1 class="wow fadeIn" data-wow-delay='0.4s'>Resident Contact</h1>
+			<div data-role="navbar" style='background-color: #C1EBD5'>
+				<ul>
+					<li><a href="resident-main.html" class="ui-btn ui-mini ui-btn-inline " data-ajax='false'>Feeds</a></li>
+					<li><a href="resident-medication.html" class="ui-btn ui-mini ui-btn-inline" data-ajax='false'>Med</a></li>
+					<li><a href="resident-summary.html" class="ui-btn ui-mini ui-btn-inline" data-ajax='false'>Summary</a></li>
+					<li><a href="resident-appointment.html" class="ui-btn ui-mini ui-btn-inline" data-ajax='false'>Appt</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+			
+
+			<div role="main" class="ui-content wow fadeIn" data-wow-delay="0.2s" data-inset="false">
+				<div class='box profile-text-main'>
+					<strong id="residentName">Jack</strong><br>
+					<span class='subline' id="bed">bed number 101</span>
+					<table>
+						<tr>
+							<td><b>Category:</b></td>
+							<td><select>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><b>DietaryPreference:</b></td>
+							<td>Halal</td>
+						</tr>
+					</table><br>
+				</div>
+				<br>
+				<ul data-role="listview" data-inset="false">
+					<li data-role="list-divider">Next-of-Kin contacts</li>
+				</ul>
+				<div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+					<h3>Emergency Contact 1</h3>
+					<table>
+						<tr>
+							<td>Name:</td>
+							<td>Angelababy</td>
+						</tr>
+						<tr>
+							<td>Relation:</td>
+							<td>Wife</td>
+						</tr>
+						<tr>
+							<td>Contact:</td>
+							<td>98565478</td>
+						</tr>
+					</table>
+				</div>
+				<div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+					<h3>Emergency Contact 2</h3>
+					<table>
+						<tr>
+							<td>Name:</td>
+							<td>Harry Armstrong</td>
+						</tr>
+						<tr>
+							<td>Relation:</td>
+							<td>Son</td>
+						</tr>
+						<tr>
+							<td>Contact:</td>
+							<td>98552678</td>
+						</tr>
+					</table>
+				</div>
+				<br/>
+				<ul data-role="listview" data-inset="false">
+					<li data-role="list-divider">Other details</li>
+				</ul>
+				<div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+					<h3>Others</h3>
+					<table>
+						<tr>
+							<td>Date of admission:</td>
+							<td>24/10/2015</td>
+						</tr>
+						<tr>
+							<td>Nationality:</td>
+							<td>Singaporean</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+
+			<!-- footer -->
+			<div data-role="footer" data-position="fixed">
+				<div class='row around-xs'>
+					<div class='col-xs-auto'>
+						<a href='home.html' class='ui-bottom-sheet-link ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button' data-ajax='false'>
+							<i class='zmdi zmdi-home zmd-2x'></i>
+							<strong>Home</strong>
+						</a>
+					</div>
+					<div class='col-xs-auto'>
+						<a href='residents.html'
+							class='ui-bottom-sheet-link ui-btn ui-btn-raised clr-primary ui-btn-inline waves-effect waves-button waves-effect waves-button'
+							data-ajax='false'
+						>
+							<i class='zmdi zmdi-accounts zmd-2x'></i>
+							<strong>Resident</strong>
+						</a>
+					</div>
+					<div class='col-xs-auto'>
+						<a href='appointment.html' class='ui-bottom-sheet-link ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button'
+							data-ajax='false'
+						>
+							<i class='zmdi zmdi-calendar-check zmd-2x'></i>
+							<strong>Appt</strong>
+						</a>
+					</div>
+					<div class='col-xs-auto'>
+						<a href='sos.html' class='ui-bottom-sheet-link ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button' data-ajax='false'>
+							<i class='zmdi zmdi-alert-octagon zmd-2x'></i>
+							<strong>S O S</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/jquery.mobile.min.js"></script>
+	<script src="./vendor/waves/waves.min.js"></script>
+	<script src="./vendor/wow/wow.min.js"></script>
+	<script src="./js/nativedroid2.js"></script>
+	<script src="nd2settings.js"></script>
+	<script src='./js/resident.js'></script>
+
+</body>
+</html>

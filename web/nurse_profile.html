@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>EzyCare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<link rel="stylesheet" href="./css/font-awesome.min.css" />
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="./vendor/waves/waves.min.css" />
+<link rel="stylesheet" href="./vendor/wow/animate.css" />
+<link rel="stylesheet" href="./css/nativedroid2.css" />
+
+<link rel="import" href="footer.html" />
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+</head>
+<body>
+
+	<div data-role="page">
+		
+		<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+			
+			<h1 class="wow fadeIn" data-wow-delay='0.4s'>Nurse Profile</h1>
+                        <div data-role="navbar" style='background-color: #C1EBD5'>
+                               <ul>
+                                       <li><a href="#" class="ui-btn clr-primary ui-mini ui-btn-inline " data-ajax='false'>Profile</a></li>
+                                       <li><a href="settingspage.html" class="ui-btn ui-mini ui-btn-inline" data-ajax='false'>Settings</a></li>
+                                       <li><a href="index.html" class="ui-btn ui-mini ui-btn-inline" data-ajax='false'>Logout</a></li>
+                               </ul>
+                       </div>
+		</div>
+
+		<!-- profile -->
+		<div role="main">
+			<div class='nd2-sidepanel-profile wow fadeInDown'>
+<!--				<img class='profile-background' src="//lorempixel.com/400/200/abstract/2/" />-->
+				<div class="row">
+					<div class='col-xs-4 center-xs'>
+						<div class='box'>
+							<img class="profile-thumbnail" src="./img/nurse.jpg" />
+						</div>
+					</div>
+					<div class='col-xs-8'>
+						<div>
+                                                    <strong>Juliet</strong></br>
+							<span class='subline'>Enrolled Nurse</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end profile -->
+
+                            <form method="post" action="#">
+                    <label for="fname">Email:</label>
+                    <input type="text" name="email" id="email" value="test@gmail.com">
+                  </form>
+
+			<hr class="inset">
+
+			<!-- newsfeed -->
+			<ul data-role="listview" data-icon="false">
+				<li data-role="list-divider">Reset Password</li>
+				<li>
+					 <form method="post" action="#">
+                    <label for="opassword">Old Password:</label>
+                    <input type="password" name="opassword" id="opassword" value="" autocomplete="off">
+                    <label for="npassword">New Password:</label>
+                    <input type="password" name="npassword" id="npassword" value="" autocomplete="off">
+                    <label for="cpassword">Confirm Password:</label>
+                    <input type="password" name="cpassword" id="cpassword" value="" autocomplete="off">
+                    <a data-role="button" class="split-custom-button" data-theme="d" data-iconpos="notext">Save</a>
+                  </form>
+
+				</li>
+				
+			</ul>
+
+		</div>
+
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">
+			<div class='row around-xs'>
+				<div class='col-xs-auto'>
+					<a href='home.html' class='ui-bottom-sheet-link ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button' data-ajax='false'>
+						<i class='zmdi zmdi-home zmd-2x'></i>
+						<strong>Home</strong>
+					</a>
+				</div>
+				<div class='col-xs-auto'>
+					<a href='residents.html' class='ui-bottom-sheet-link ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button' data-ajax='false'>
+						<i class='zmdi zmdi-accounts zmd-2x'></i>
+						<strong>Resident</strong>
+					</a>
+				</div>
+				<div class='col-xs-auto'>
+					<a href='appointment.html' class='ui-bottom-sheet-link ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button'
+						data-ajax='false'
+					>
+						<i class='zmdi zmdi-calendar-check zmd-2x'></i>
+						<strong>Appt</strong>
+					</a>
+				</div>
+				<div class='col-xs-auto'>
+					<a href='sos.html' class='ui-bottom-sheet-link ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button' data-ajax='false'>
+						<i class='zmdi zmdi-alert-octagon zmd-2x'></i>
+						<strong>S O S</strong>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/jquery.mobile.min.js"></script>
+	<script src="./vendor/waves/waves.min.js"></script>
+	<script src="./vendor/wow/wow.min.js"></script>
+	<script src="./js/nativedroid2.js"></script>
+	<script src="nd2settings.js"></script>
+
+</body>
+</html>
